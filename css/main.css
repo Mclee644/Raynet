@@ -1,3 +1,4 @@
+@import url(../css/fontFace.css);
 *{
     margin:0;
     padding:0;
@@ -8,6 +9,14 @@ body{
     min-height: 100vh;
     background:#fff;
     
+}
+:root{
+    /*google font themes*/
+    --abel:Abel,cursive;
+    --anton:Anton,cursive;
+    --josefin:Josefin,cursive;
+    --lexend:Lexend,cursive;
+    --livvic:Livvic,cursive;
 }
 a{
     text-decoration: none;
