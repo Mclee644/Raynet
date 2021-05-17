@@ -4,6 +4,7 @@
     padding:0;
     box-sizing:border-box;
     scroll-behavior:smooth;
+    font-family: var(--abel);
 }
 body{
     min-height: 100vh;
@@ -24,8 +25,7 @@ a{
 }
 a:hover{
 
-    color:coral;
-}
+    color:#0d0aa1dc;}
 
 a:active{
     color:#0d0aa1dc;
@@ -56,7 +56,7 @@ nav{
     height: 60px;
     line-height: 60px;
     padding-left:15px;
-    font-family:var(--abel);
+    font-family:var(--livvic);
     text-transform: uppercase;
     letter-spacing: 1.5px;
     user-select: none;
@@ -133,6 +133,7 @@ nav{
     letter-spacing: 2px;
     font-size:1.2rem;
     font-weight: 600;
+    font-family: var(--abel);
     
 }
 #navBar ul li a:hover  , #navBar.active ul li:hover  {
@@ -143,6 +144,16 @@ nav{
 
 section{
     max-width: 1200px;
+    margin:0 auto;
+    min-height:100vh;
+    color:#f5f5f5;
+    font-size: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.siteTitle{
+    max-width: 100%;
     margin:0 auto;
     min-height:100vh;
     color:#f5f5f5;
@@ -263,6 +274,23 @@ footer .container{
 .sec.contact ul li {
     padding:5px 0;
     color:#fff;
+}
+.sec.contact ul li a{
+    color:#f5f5f5;
+    transform: translateY(-5px);
+}
+.sec.contact ul li a span{
+    font-family: var(--josefin);
+    letter-spacing: 1px;
+    padding-left:2px;
+    transition:.5s;
+
+
+}
+.sec.contact ul li a:hover span{
+    color:violet;
+    font-family: var(--livvic);
+    padding-left:3px;
 }
 
 
