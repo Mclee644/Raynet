@@ -147,8 +147,9 @@ section{
     margin:0 auto;
     min-height:100vh;
     color:#f5f5f5;
-    font-size: 10rem;
+    font-size: 18vh;
     display: flex;
+    font-weight:700;
     justify-content: center;
     align-items: center;
 }
@@ -171,11 +172,15 @@ section#home{
     
 
 }
-section#home::after{
+section#home::before{
     content:'';
     position:absolute;
     background:black;
-    opacity:0.7;
+    opacity:0.6;
+    width:100%;
+    background-position: center;
+    background-size: cover;
+    height:100vh;
     visibility: visible;
 }
 
