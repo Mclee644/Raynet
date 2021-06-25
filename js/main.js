@@ -17,3 +17,20 @@ toggle.onclick= function(){
     toggle.classList.toggle('active');
     navBar.classList.toggle('active');
 }
+//blurred popup workout
+ function blurPop(){
+     const blur=document.getElementById('blur');
+     blur.classList.toggle('blurred');
+
+     const popUp=document.getElementById('popUp');
+     popUp.classList.toggle('active');
+ }
+ 
+ function popsRem(){
+	     const blur=document.getElementById('blur');
+     const popUp=document.getElementById('popUp');
+
+	 blur.classList.remove("blurred");
+	 popUp.classList.remove("active");
+	 
+ }
