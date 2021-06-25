@@ -442,13 +442,13 @@ transition-property:text-decoration color;
 	box-shadow:0px 5px 30px rgba(0,0,0,0.7);
 	visibility:hidden;
 	opacity:0;
-	
+    transition:0.5s ;
 }
 #popUp.active{
 	top:50%;
 	visibility:visible;
 	opacity:1;
-	
+	transition:0.5s ;
 }
 #popUp ul li a{
 	color:#999999;
