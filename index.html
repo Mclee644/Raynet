@@ -9,28 +9,41 @@
     <link rel="stylesheet" href="./css/all.css">
     <!---->
     <link rel="stylesheet"  href="./css/main.css">
+    <!--<link rel="stylesheet"  href="../css/main77.css">
+    <link rel="stylesheet"  href="../Raynet--update001/css/main360.css">-->
     <!---->
     <link rel="shortcut icon" href="./assets/logos/002logo.jpg">
 </head>
 <body>
     <div id="blur">
-        <nav id="nav">
-            <a onclick="blurPop()" href="#" class="logo" id="logo">raynet.com</a>
-            <div id="toggle" ></div>
-            <div id="navBar">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#pages">Pages</a></li>
-                    <li><a href="#service">Service</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </div>
-        </nav>
-        <section class="siteTitle" id="home">Home</section>
-        <section id="pages">
-			<h2> Pages</h2>
+		
+		<nav id="nav">
+			<a href="#" class="logo" id="logo">raynet.com</a>
+			<div id="toggle" ></div>
+			<div id="navBar">
+				<ul>
+					<li><a href="#siteTitle">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#team">Team</a></li>
+					<li><a href="#services">services</a></li>
+					<li><a href="#service">Service</a></li>
+					<li><a href="#contact">Contact Us</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<section id="siteTitle">
+			<div class="siteT container">
+				<div>
+					<h1>Welcome to,<span></span></h1>
+					<h1>Raynet Online Service Center<span></span></h1>
+					<a href="#" type="button" onclick="blurPop()" class="btnS">Services</a>
+				</div>
+			</div>
+		</section>
+			
+        <section id="services" class="container">
+			<h2> Services</h2>
 			<div class="cards">
 				<div class="card">
 					<div class="content">
@@ -167,10 +180,9 @@
 
 			</div>
 		</section>
-		
-       
+		<!-- footer html section-->
         <footer>
-            <div class="container">
+            <div class="container360">
                 <div class="sec about">
                     <H1>About Us</H1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus expedita reiciendis possimus dicta non fugiat ipsam quidem ea nam asperiores vero assumenda porro neque provident alias, molestias cum, laboriosam quis!</p>
@@ -235,9 +247,16 @@
                 </div>
             </div>
         </footer>
-        <div class="crText"><p>&copy; 2021 Raynet onlice service </p></div>
-     </div>
-	 <!-- Service the we render's popup menu-->
+		<!--
+        <section id="service" class="container">Service</section>
+		<section id="about" class="container">About</section>
+        <section id="contact" class="container">Contact </section>
+		-->
+		<!--footer section-->
+
+        <div class="crText"><p><span>&copy; 2021 Raynet onlice service center</span> <span>powered by Leetech&trade;, all rights reserve</span></p></div> 
+	</div>
+	<!-- Popup content-->
      <div id="popUp" >
          <div class="content">
 			<h2>Raynet Online Service Center is back again to render it's customers with the best of online service. The followings are some the <span>Online services</span> we render to our august customers...</h2>
@@ -247,19 +266,20 @@
 				<li><a href="#service" onclick="popsRem()">american visa lottery</a></li>
 				<li><a href="#service" onclick="popsRem()">e-commerce registration</a></li>
 				<li><a href="https://portal.nss.gov.gh" onclick="popsRem()">national service registration</a></li>
-				<li><a href="#pages" onclick="popsRem()">university admission application</a></li>
+				<li><a href="#services" onclick="popsRem()">university admission application</a></li>
 				<li><a href="https://apply.healthtraining.gov.gh/application" onclick="popsRem()">nursing training admission application</a></li>
 				<li><a href="https://admission.coeportal.edu.gh" onclick="popsRem()">colleges of education admission</a></li>
 				<li><a href="https://gcbcapital.com.gh/bailout" onclick="popsRem()">GBC capital bailout application</a></li>
-				<li><a onclick="popsRem()" href="#pages">waec registration</a></li>
+				<li><a onclick="popsRem()" href="#services">waec registration</a></li>
 				<li><a href="https://ghana.waecdirect.org" onclick="popsRem()">waec results printing</a></li>
 				<li><a href="https://cssps.gov.gh" onclick="popsRem()">senior high school placement printing</a></li>
 				<li><a onclick="popsRem()" href="https://google.com">academic research <span>ect.</span></a></li>
 			</ul>
 			<a href="#" onclick="blurPop()" class="popExit">Close</a>             
          </div>
-     </div>  
+	</div>	 
 
+	 
     <!-- main javascript-->
     <script src="./js/main.js"></script>
 </body>

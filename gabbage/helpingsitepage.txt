@@ -1,0 +1,599 @@
+        <footer>
+            <div class="container">
+                <div class="sec about">
+                    <H1>About Us</H1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus expedita reiciendis possimus dicta non fugiat ipsam quidem ea nam asperiores vero assumenda porro neque provident alias, molestias cum, laboriosam quis!</p>
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+
+                    </ul>
+                    <div id="scrollTop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+                </div>
+                <div class="sec shop">
+                    <h1>Quick Links</h1>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">application</a></li>
+                        <li><a href="#">Admission</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="sec shop">
+                    <h1>Shop</h1>
+                    <ul>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">women</a></li>
+                        <li><a href="#">Children</a></li>
+                        <li><a href="#">Clothing</a></li>
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">Shoe</a></li>
+                        <li><a href="#">Magnetic pant</a></li>
+                        <li><a href="#">Quantum Pendant</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sec contact">
+                    <h1>Contact Us</h1>
+                    <ul>
+                        <li>
+                            <span><i class="fas fa-map-marker-alt"></i></span>
+                            <span>Asamankese,<br/>
+                                in front of Rex cinema,<br/>
+                                opposite the Ghana Commercial Bank. 
+                            </span>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-envelope"></i></span>
+                            <span><a href="mailto:raynet.osc@gmail.com"><span>raynet.osc@gmail.com</span></a>
+                            </span>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-phone"></i></span>
+                            <p>
+								<a href="tel:+233242617574">Tel1:<span>+233242617574</span></a><br/>
+								<a href="tel:+233557931194">Tel2: <span>+233557931194</span></a><br/>
+								<a href="tel:+233266971052">Tel3: <span>+233266971052</span></a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+--------------------------------------------------------------------------------------------------------------------------
+footer{
+    width:100%;
+    padding:0px 150px;
+    background-image:var(--rayGrad);
+}
+
+footer .container{
+    height: auto;
+    display: grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    grid-gap:20px;
+}
+.sec h1{
+    color:#fff;
+    position: relative;
+    margin-bottom:20px;
+    letter-spacing: 1px;
+
+}
+.sec h1:before{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-4px;
+    font-weight: 400;
+    width:100px;
+    height:2px;
+    background:#fff;
+} 
+.sec.about p{
+    color:#fff;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.sec.about ul {
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(4 , 40px);
+}
+.sec.about ul li a i{
+    width:40px;
+    height:40px;
+    color:#fff;
+    display: flex;
+    font-size:1.2rem;
+    justify-content: center;
+    align-items: center;
+    background:#f5f5f5;
+    border-radius:48%;
+    transition:1s;
+    border:none;
+    box-shadow: -1px -1px 5px rgba(255,255,255,0.5);
+    text-shadow: -1px -1px 5px rgba(255,255,255,0.9);
+
+}
+.sec.about ul li:nth-child(1) a i.fab{color:rgb(4, 0, 255);text-shadow: 1px -1px 4px rgb(4, 0, 255);}
+.sec.about ul li:nth-child(2) a i.fab{
+    color:rebeccapurple;
+    text-shadow: 1px -1px 4px rebeccapurple;
+
+}
+.sec.about ul li:nth-child(3) a i.fab{
+    color:var(--siteColor);
+    text-shadow: 1px -1px 4px var(--siteColor);
+
+}
+.sec.about ul li:nth-child(4) a i.fab{
+    color:rgba(0, 0, 0, 0.897);
+    text-shadow: 1px -1px 4px rgba(0, 0, 0, 0.897);
+
+}
+
+.sec.about ul li a:hover i{
+    transform:translateY(10px) rotate(360deg);    
+}
+.sec.about #scrollTop{
+    margin-top: 20px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+}
+.sec.about #scrollTop a i{
+    font-size: 2em;
+    color:#f5f5f5;
+    font-weight:700;
+}
+.sec.shop ul li a {
+    color:#fff999;
+    font-size:0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-bottom: 1px solid transparent;
+    transition: 1s ;
+    padding-bottom:1px;
+    margin-bottom:4px;
+
+}
+.sec.shop ul li a:hover{
+    border-bottom: 1px solid #fff99f;
+    transform: translateX(20px);
+}.sec.contact ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.sec.contact ul li {
+    padding:5px 0;
+    color:#fff;
+}
+.sec.contact ul li a{
+    color:#f5f5f5;
+    transform: translateY(-5px);
+}
+.sec.contact ul li a span{
+    font-family: var(--josefin);
+    letter-spacing: 1px;
+    padding-left:2px;
+    transition:.5s;
+
+
+}
+.sec.contact ul li a:hover span{
+    color:violet;
+    font-family: var(--livvic);
+    padding-left:3px;
+}
+-------------------------------------------------------------------------------------------------------------------------------------
+wat we want
+-------------------------------------------------------------------------------------------------------------------------------------
+        <footer>
+            <div class="container">
+                <div class="sec about">
+                    <H1>About Us</H1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus expedita reiciendis possimus dicta non fugiat ipsam quidem ea nam asperiores vero assumenda porro neque provident alias, molestias cum, laboriosam quis!</p>
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+
+                    </ul>
+                    <div id="scrollTop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+                </div>
+                <div class="sec shop">
+                    <h1>Quick Links</h1>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">application</a></li>
+                        <li><a href="#">Admission</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="sec shop">
+                    <h1>Shop</h1>
+                    <ul>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">women</a></li>
+                        <li><a href="#">Children</a></li>
+                        <li><a href="#">Clothing</a></li>
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">Shoe</a></li>
+                        <li><a href="#">Magnetic pant</a></li>
+                        <li><a href="#">Quantum Pendant</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sec contact">
+                    <h1>Contact Us</h1>
+                    <ul>
+                        <li>
+                            <span><i class="fas fa-map-marker-alt"></i></span>
+                            <span>Asamankese,<br/>
+                                in front of Rex cinema,<br/>
+                                opposite the Ghana Commercial Bank. 
+                            </span>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-envelope"></i></span>
+                            <span><a href="mailto:raynet.osc@gmail.com"><span>raynet.osc@gmail.com</span></a>
+                            </span>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-phone"></i></span>
+                            <p><a href="tel:+233242617574">Tel1:<span>+233242617574</span></a>
+                                <br/><a href="tel:+233557931194">Tel2: <span>+233557931194</span></a>
+                                <br/><a href="tel:+233266971052">Tel3: <span>+233266971052</span></a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+--------------------------------------------------------------------------------------------------------------------------------------
+footer{
+    width:100%;
+    padding:20px 100px;
+    background-image:var(--rayGrad);
+}
+
+footer .container{
+    height: auto;
+    display: grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    grid-gap:20px;
+}
+.sec h1{
+    color:#fff;
+    position: relative;
+    margin-bottom:20px;
+    letter-spacing: 1px;
+
+}
+.sec h1:before{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-4px;
+    font-weight: 400;
+    width:100px;
+    height:2px;
+    background:#fff;
+} 
+.sec.about p{
+    color:#fff;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.sec.about ul {
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(4 , 40px);
+}
+.sec.about ul li a i{
+    width:40px;
+    height:40px;
+    color:#fff;
+    display: flex;
+    font-size:1.2rem;
+    justify-content: center;
+    align-items: center;
+    background:#f5f5f5;
+    border-radius:48%;
+    transition:1s;
+    border:none;
+    box-shadow: -1px -1px 5px rgba(255,255,255,0.5);
+    text-shadow: -1px -1px 5px rgba(255,255,255,0.9);
+
+}
+.sec.about ul li:nth-child(1) a i.fab{color:rgb(4, 0, 255);text-shadow: 1px -1px 4px rgb(4, 0, 255);}
+.sec.about ul li:nth-child(2) a i.fab{
+    color:rebeccapurple;
+    text-shadow: 1px -1px 4px rebeccapurple;
+
+}
+.sec.about ul li:nth-child(3) a i.fab{
+    color:rgb(0, 225, 255);
+    text-shadow: 1px -1px 4px rgb(0, 217, 255);
+
+}
+.sec.about ul li:nth-child(4) a i.fab{
+    color:rgba(0, 0, 0, 0.897);
+    text-shadow: 1px -1px 4px rgba(0, 0, 0, 0.897);
+
+}
+
+.sec.about ul li a:hover i{
+    transform:translateY(10px) rotate(360deg);    
+}
+.sec.about #scrollTop{
+    margin-top: 20px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+}
+.sec.about #scrollTop a i{
+    font-size: 2em;
+    color:#f5f5f5;
+    font-weight:700;
+}
+.sec.shop ul li a {
+    color:#fff999;
+    font-size:0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-bottom: 1px solid transparent;
+    transition: 1s ;
+    padding-bottom:1px;
+    margin-bottom:4px;
+
+}
+.sec.shop ul li a:hover{
+    border-bottom: 1px solid #fff99f;
+    transform: translateX(20px);
+}.sec.contact ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.sec.contact ul li {
+    padding:5px 0;
+    color:#fff;
+}
+.sec.contact ul li a{
+    color:#f5f5f5;
+    transform: translateY(-5px);
+}
+.sec.contact ul li a span{
+    font-family: var(--josefin);
+    letter-spacing: 1px;
+    padding-left:2px;
+    transition:.5s;
+
+
+}
+.sec.contact ul li a:hover span{
+    color:violet;
+    font-family: var(--livvic);
+    padding-left:3px;
+}
+----------------------------------------------------------------------------------------------------------------------------
+repeat
+----------------------------------------------------------------------------------------------------------------------------
+footer{
+    width:100%;
+    padding:20px 100px;
+    background-image:var(--rayGrad);
+}
+
+footer .container{
+    height: auto;
+    display: grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    grid-gap:20px;
+}
+.sec h1{
+    color:#fff;
+    position: relative;
+    margin-bottom:20px;
+    letter-spacing: 1px;
+
+}
+.sec h1:before{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-4px;
+    font-weight: 400;
+    width:100px;
+    height:2px;
+    background:#fff;
+} 
+.sec.about p{
+    color:#fff;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.sec.about ul {
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(4 , 40px);
+}
+.sec.about ul li a i{
+    width:40px;
+    height:40px;
+    color:#fff;
+    display: flex;
+    font-size:1.2rem;
+    justify-content: center;
+    align-items: center;
+    background:#f5f5f5;
+    border-radius:48%;
+    transition:1s;
+    border:none;
+    box-shadow: -1px -1px 5px rgba(255,255,255,0.5);
+    text-shadow: -1px -1px 5px rgba(255,255,255,0.9);
+
+}
+.sec.about ul li:nth-child(1) a i.fab{color:rgb(4, 0, 255);text-shadow: 1px -1px 4px rgb(4, 0, 255);}
+.sec.about ul li:nth-child(2) a i.fab{
+    color:rebeccapurple;
+    text-shadow: 1px -1px 4px rebeccapurple;
+
+}
+.sec.about ul li:nth-child(3) a i.fab{
+    color:rgb(0, 225, 255);
+    text-shadow: 1px -1px 4px rgb(0, 217, 255);
+
+}
+.sec.about ul li:nth-child(4) a i.fab{
+    color:rgba(0, 0, 0, 0.897);
+    text-shadow: 1px -1px 4px rgba(0, 0, 0, 0.897);
+
+}
+
+.sec.about ul li a:hover i{
+    transform:translateY(10px) rotate(360deg);    
+}
+.sec.about #scrollTop{
+    margin-top: 20px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+}
+.sec.about #scrollTop a i{
+    font-size: 2em;
+    color:#f5f5f5;
+    font-weight:700;
+}
+.sec.shop ul li a {
+    color:#fff999;
+    font-size:0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-bottom: 1px solid transparent;
+    transition: 1s ;
+    padding-bottom:1px;
+    margin-bottom:4px;
+
+}
+.sec.shop ul li a:hover{
+    border-bottom: 1px solid #fff99f;
+    transform: translateX(20px);
+}.sec.contact ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.sec.contact ul li {
+    padding:5px 0;
+    color:#fff;
+}
+.sec.contact ul li a{
+    color:#f5f5f5;
+    transform: translateY(-5px);
+}
+.sec.contact ul li a span{
+    font-family: var(--josefin);
+    letter-spacing: 1px;
+    padding-left:2px;
+    transition:.5s;
+
+
+}
+.sec.contact ul li a:hover span{
+    color:violet;
+    font-family: var(--livvic);
+    padding-left:3px;
+}
+-------------------------------------------------------------------------------------------==
+
+   
+ #siteTitle{
+     background-image:url(../assets/bgs/365wp.jpg);
+     background-size:cover;
+     background-position:top center;
+     position:relative;
+    z-index: 1;
+ }
+ #siteTitle::after{
+     content:'';
+     position:absolute;
+     width:100%;
+     height:100%;
+     background-color:#222222;
+     top:0;
+     left:0;
+     opacity:0.6;
+     z-index: -1;
+ }
+ #siteTitle h1{
+     position:relative;
+     color:transparent;
+     width:fit-content;
+     font-size: 2rem;
+     letter-spacing: .09em;
+     animation:textReveal 2.3s ease forwards;
+     animation-delay:3.3s;
+ }
+ #siteTitle h1:nth-child(1){
+    animation-delay:3.5s;
+}
+#siteTitle h1:nth-child(2){
+    animation:nameReveal 1.5s ease forwards;
+    animation-delay:5s;
+}
+
+ #siteTitle h1 span{
+     position:absolute;
+     width:0;
+     height:100%;
+     top:0;
+     left:0;
+     background-color:rgb(101, 165, 248);
+     animation:textRevealBox 2.3s ease;
+     animation-delay:1s;
+
+ }
+#siteTitle h1:nth-child(1) span{
+    animation-delay:2.5s;
+}
+#siteTitle h1:nth-child(2) span{
+    animation:textRevealBox 3.9s ease;
+    animation-delay:4.5s;
+}
+
+
+#siteTitle a{
+    margin-top:30px;
+    display:inline-block;
+    padding:10px 30px;
+    border:2px solid rgb(115, 161, 247);
+    color:rgb(101, 165, 248);
+    transition:1s ease;
+    font-size: 1.5rem;
+    letter-spacing: .1em;
+    transition-property:color background-color !important;
+}
+#siteTitle a:hover{
+    color:#ffffff;
+    background-color:rgb(101, 165, 248);
+}
+#siteTitle .siteT{
+    max-width:1200px;
+    padding:0 50px;
+    margin:0 auto;
+    justify-content: flex-start;
+}
+
