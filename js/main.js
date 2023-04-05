@@ -27,10 +27,17 @@ toggle.onclick= function(){
  }
  
  function popsRem(){
-	     const blur=document.getElementById('blur');
+	 const blur=document.getElementById('blur');
      const popUp=document.getElementById('popUp');
 
 	 blur.classList.remove("blurred");
 	 popUp.classList.remove("active");
 	 
  }
+ //date for the copyright text
+ let copyright = document.getElementById('Text');
+ let currentDate = new Date;
+ let updateDate = ` ${currentDate.getFullYear()} Raynet onlice service center all rights reserved`;
+copyright.innerText += updateDate;
+ 
+ console.log(currentDate.getFullYear(), copyright,updateDate);
