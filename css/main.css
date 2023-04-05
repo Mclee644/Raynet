@@ -261,7 +261,7 @@ nav {
   width: 300px;
   height: 400px;
   /*background: rebeccapurple;*/
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
   overflow: hidden;
   padding: 1px;
 }
