@@ -221,6 +221,7 @@ nav {
   padding: 10px 30px;
   border: 2px solid rgb(115, 161, 247);
   color: rgb(101, 165, 248);
+  border-radius:0.6rem;
   transition: 1s ease;
   font-size: 1.5rem;
   letter-spacing: 0.1em;
